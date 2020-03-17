@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>金图</title>
+  <link rel="shortcut icon" href="http://39.108.110.147:888/formLogo.png" type="image/x-icon">
+  <link rel="bookmark" href="http://39.108.110.147:888/formLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../static/layui/css/layui.css">
+  <link rel="stylesheet" href="../static/css/public.css">
+  <link rel="stylesheet" href="../static/css/pay.css">
+</head>
+<body>
+<div class="container">
+  <div class="header-box">
+    <div class="header">
+        <a href='/' class="home-btn">
+          <img src="http://139.9.115.248/imgs/home.png" alt=""><span>首页</span>          
+        </a>
+
+        <a href='javascript:;' class="sort-btn">
+          <img src="/images/list.png" alt="">          
+        </a>
+    
+        <ul class="layui-nav">
+           <li class="layui-nav-item header-avatar" style='line-height: 40px;'>
+            <a href=""><img src="http://39.108.110.147:888/user.png" class="layui-nav-img"></a>
+            <dl class="layui-nav-child ">
+            </dl>
+          </li>
+          <li class="header-login"><a href="/login.html#/login">登入</a></li>
+          <li><a href="/login.html#/register">注册</a></li>
+          <li><a href="/cart.html">购物车</a></li>
+          <li><a href="/list.html">我的订单</a></li>
+        </ul>
+      </div>
+</div>
+
+<div class='header-box'>
+    <div class="header2">
+      <a href='/' class="index-logo">
+        <!-- <img src="http://39.108.110.147:888/logo.png" alt=""> -->
+      <img src="http://hbimg.b0.upaiyun.com/684868922b50b8ce8da7f5e173e2068cda286daaf1f5-fgN0Ij_fw658">
+      <!-- <span>金图</span> -->
+      </a>
+    
+        <div class="search-input">
+          <div class="layui-input-block">
+            <input  type="text" name="title" lay-verify="title" autocomplete="off" placeholder="输入产品关键字进行搜索" class="layui-input search-input">
+            <button type="button" class="layui-btn layui-btn-normal search-btn">搜索</button>
+          </div>
+        </div>
+      </div>
+</div >
+
+<div class="header-box">
+  <!-- 此处nav-bar的颜色修改了layui.css源码注意 -->
+  <ul class="layui-nav layui-nav-pc layui-nav1" >
+    <!-- layui-nav-box内包括的是该页面在手机端逐行显示的nav部分。 -->
+    <!-- <div class="layui-nav-box "> -->
+      <li class="layui-nav-item ">
+        <a href="javascript:;">科研试剂</a>
+        <dl class="layui-nav-child">
+          <dd><a href="/search.html?categoryId=1100">常规试剂</a></dd>
+          <dd><a href="/search.html?categoryId=1200">生物试剂</a></dd>
+        </dl>
+      </li>
+            <li class="layui-nav-item ">
+              <a href="javascript:;">仪器设备</a>
+              <dl class="layui-nav-child">
+                <dd><a href="/search.html?categoryId=2100">仪器设备</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item ">
+              <a href="javascript:;">实验耗材</a>
+              <dl class="layui-nav-child">
+                <dd><a href="/search.html?categoryId=3100">常规耗材</a></dd>
+                <dd><a href="/search.html?categoryId=3200">防护用品</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item ">
+              <a href="javascript:;">办公用品</a>
+              <dl class="layui-nav-child">
+                <dd><a href="/search.html?categoryId=4100">办公设备</a></dd>
+                <dd><a href="/search.html?categoryId=4200">办公耗材</a></dd>
+              </dl>
+            </li>
+    <li class="layui-nav-item ">
+      <a href="javascript:;">化玻用品</a>
+      <dl class="layui-nav-child">
+        <dd><a href="/search.html?categoryId=5100">化玻用品</a></dd>
+      </dl>
+    </li>
+    <li class="layui-nav-item ">
+      <a href="javascript:;">培养基</a>
+      <dl class="layui-nav-child">
+        <dd><a href="/search.html?categoryId=6100">培养基</a></dd>
+      </dl>
+    </li>
+    <li class="layui-nav-item ">
+      <a href="javascript:;">试剂盒</a>
+      <dl class="layui-nav-child">
+        <dd><a href="/search.html?categoryId=7100">试剂盒</a></dd>
+      </dl>
+    </li>
+    <li class="layui-nav-item ">
+      <a href="javascript:;">其他</a>
+      <dl class="layui-nav-child">
+        <dd><a href="/search.html?categoryId=8100">其他</a></dd>
+      </dl>
+    </li>
+            <!-- <li class='nav-btn nav-btn-status2'><i class="layui-icon layui-icon-triangle-d"style="font-size: 22px;"></i>   </li> -->
+    <!-- </div> -->
+    <!-- <div class="layui-nav-box"> -->
+      <!-- <li class="layui-nav-item ">
+        <a href="javascript:;">产品</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">选项1</a></dd>
+          <dd><a href="">选项2</a></dd>
+          <dd><a href="">选项3</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:;">产品</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">选项1</a></dd>
+          <dd><a href="">选项2</a></dd>
+          <dd><a href="">选项3</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:;">产品</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">选项1</a></dd>
+          <dd><a href="">选项2</a></dd>
+          <dd><a href="">选项3</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item ">
+        <a href="javascript:;">产品</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">选项1</a></dd>
+          <dd><a href="">选项2</a></dd>
+          <dd><a href="">选项3</a></dd>
+        </dl>
+      </li> -->
+    <!-- </div> -->
+  </ul>
+</div>
+
+<ul class="layui-nav layui-nav-tree animated" id='my-tree' lay-filter="test" lay-shrink='all'>
+  <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+    <li class="layui-nav-item ">
+      <a href="javascript:;">xxx</a>
+      <dl class="layui-nav-child">
+        <dd><a href="javascript:;">选项1</a></dd>
+        <dd><a href="javascript:;">选项2</a></dd>
+        <dd><a href="">跳转</a></dd>
+      </dl>
+    </li>
+    <li class="layui-nav-item">
+      <a href="javascript:;">解决方案</a>
+      <dl class="layui-nav-child">
+        <dd><a href="">移动模块</a></dd>
+        <dd><a href="">后台模版</a></dd>
+        <dd><a href="">电商平台</a></dd>
+      </dl>
+    </li>
+    <li class="layui-nav-item ">
+      <a href="javascript:;">xxx</a>
+      <dl class="layui-nav-child">
+        <dd><a href="javascript:;">选项1</a></dd>
+        <dd><a href="javascript:;">选项2</a></dd>
+        <dd><a href="">跳转</a></dd>
+      </dl>
+    </li>
+  </ul>
+<div class="rag">
+
+</div>
+
+
+              <div class="content" id="index-content" >
+
+                <div class="cart-box">
+                    <div class="cart-logo">
+                        <img src="/images/cart.png" alt=""><span>购物车列表</span>
+                    </div>
+
+
+
+                   <!-- <p class="cart-nothing-tip">您的购物车内暂无商品</p>  -->
+                </div>
+
+            <div class="cart-bar cart-bar-status1">
+              <div class="cart-bar-item">
+                <form class="layui-form" action="">
+                  <div class="layui-form-item">
+                    <div class="layui-input-block my-checkbox-block-all">
+                      <input  type="checkbox" name="" lay-skin="primary" title="全选">
+                      <!-- <span>全选</span>  -->
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+
+              <div class="cart-bar-item">
+                <div class="cart-item-delete">
+                  <a href="javascript:;">删除</a>
+                </div>
+              </div>
+
+              <div class="cart-bar-item">
+                <div class="cart-item-price">
+                  <p>总价格：￥<span>555</span></p>
+                </div>
+              </div>
+
+              <div class="cart-bar-item">
+                <div class="cart-item-pay">
+                  <p>结算</p>
+                </div>
+              </div>
+            </div>
+              </div>
+
+
+              <div class="footer">
+                &copy;金图科贸
+      </div>
+</div>
+
+ 
+<script src="../static/utils/js.cookie.min.js"></script>
+<script src="../static/layui/layui.js"></script>
+<script src="../static/js/public.js"></script>
+<script src="../static/js/pay.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+2020-02-09 20:13:27,953 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on DESKTOP-0QNT9TJ with PID 11432 (D:\Deve\jintu\litemall-all\target\classes started by admin in D:\Deve\jintu)
+2020-02-09 20:13:27,956 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-02-09 20:13:27,956 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-02-09 20:13:40,565 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, key_name, key_value, add_time, update_time, deleted from litemall_system WHERE ( deleted = ? ) 
+2020-02-09 20:13:40,749 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:13:40,858 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 18
+2020-02-09 20:13:40,865 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 42] ============================================================================================================================================================================================================
+2020-02-09 20:13:40,865 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 43] 
+2020-02-09 20:13:40,865 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 44]               Litemall 初始化信息
+2020-02-09 20:13:40,865 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 45] 
+2020-02-09 20:13:40,865 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统信息  ]]
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     服务器端口        ->        8080
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库USER        ->        root
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库地址        ->        jdbc:mysql://112.74.58.0:3306/litemall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  模块状态  ]]
+2020-02-09 20:13:40,866 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     邮件        ->        false
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     短信        ->        false
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递信息        ->        false
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递鸟ID        ->        XXXXXXXXX
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     对象存储        ->        local
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象存储路径        ->        storage
+2020-02-09 20:13:40,867 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象访问地址        ->        http://localhost:8080/wx/storage/fetch/
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  微信相关  ]]
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP KEY        ->        wxd00e2c332ba2c699
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP-SECRET        ->        d3bbf624a482426639573cb942ac813c
+2020-02-09 20:13:40,868 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-ID        ->        1573872631
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-KEY        ->        Cy19790903cyd20121119Cjy19790903
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付通知地址        ->        http://www.example.com/wx/order/pay-notify
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统设置  ]]
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     自动创建朋友圈分享图        ->        false
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     商场名称        ->        litemall
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     首页显示记录数：NEW,HOT,BRAND,TOPIC,CatlogList,CatlogMore        ->        6,6,4,4,4,4
+2020-02-09 20:13:40,869 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 49]   
+2020-02-09 20:13:40,870 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 50] ============================================================================================================================================================================================================
+2020-02-09 20:13:44,842 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-02-09 20:13:44,858 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-02-09 20:13:44,861 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-02-09 20:13:44.8496458(Timestamp), false(Boolean)
+2020-02-09 20:13:44,910 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-09 20:13:44,919 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-02-09 20:13:44,920 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-02-09 20:13:44.9154692(Timestamp), false(Boolean)
+2020-02-09 20:13:44,964 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-09 20:13:46,177 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 19.436 seconds (JVM running for 22.355)
+2020-02-09 20:13:46,210 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( order_status = ? and deleted = ? ) 
+2020-02-09 20:13:46,212 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 101(Short), false(Boolean)
+2020-02-09 20:13:46,270 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-09 20:13:46,274 INFO [pool-1-thread-1] o.l.litemall.wx.task.OrderUnpaidTask [OrderUnpaidTask.java : 34] 系统开始处理延时任务---订单超时未付款---43
+2020-02-09 20:13:46,286 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order where id = ? 
+2020-02-09 20:13:46,291 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) 
+2020-02-09 20:13:46,293 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 43(Integer)
+2020-02-09 20:13:46,293 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-09 20:13:46,343 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:13:46,348 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:13:46,363 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_order SET id = ?, user_id = ?, order_sn = ?, order_status = ?, consignee = ?, mobile = ?, address = ?, message = ?, goods_price = ?, freight_price = ?, coupon_price = ?, integral_price = ?, groupon_price = ?, order_price = ?, actual_price = ?, comments = ?, end_time = ?, add_time = ?, update_time = ?, deleted = ? where id = ? and update_time = ? 
+2020-02-09 20:13:46,378 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] ==> Parameters: 43(Integer), 1(Integer), 20200206396112(String), 103(Short), hyh(String), 15890373389(String), 河南省郑州市中原区 郑州轻工业大学(String), (String), 27.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 27.00(BigDecimal), 27.00(BigDecimal), 0(Short), 2020-02-09 20:13:46.3446528(Timestamp), 2020-02-06 16:34:44.0(Timestamp), 2020-02-09 20:13:46.3446528(Timestamp), false(Boolean), 43(Integer), 2020-02-06 16:34:44.0(Timestamp)
+2020-02-09 20:13:46,522 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:13:46,546 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-09 20:13:46,549 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 43(Integer), false(Boolean)
+2020-02-09 20:13:46,628 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:13:46,629 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_goods_product set number = number + ?, update_time = now() where id = ? 
+2020-02-09 20:13:46,633 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] ==> Parameters: 1(Short), 22(Integer)
+2020-02-09 20:13:46,751 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:13:46,752 INFO [pool-1-thread-1] o.l.litemall.wx.task.OrderUnpaidTask [OrderUnpaidTask.java : 65] 系统结束处理延时任务---订单超时未付款---43
+2020-02-09 20:37:54,642 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on DESKTOP-0QNT9TJ with PID 10200 (D:\Deve\jintu\litemall-all\target\classes started by admin in D:\Deve\jintu)
+2020-02-09 20:37:54,647 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-02-09 20:37:54,647 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-02-09 20:38:04,877 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, key_name, key_value, add_time, update_time, deleted from litemall_system WHERE ( deleted = ? ) 
+2020-02-09 20:38:04,974 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:38:05,050 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 18
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 42] ============================================================================================================================================================================================================
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 43] 
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 44]               Litemall 初始化信息
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 45] 
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:38:05,054 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统信息  ]]
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     服务器端口        ->        8080
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库USER        ->        root
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库地址        ->        jdbc:mysql://112.74.58.0:3306/litemall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  模块状态  ]]
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:38:05,055 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     邮件        ->        false
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     短信        ->        false
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递信息        ->        false
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递鸟ID        ->        XXXXXXXXX
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     对象存储        ->        local
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象存储路径        ->        storage
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象访问地址        ->        http://localhost:8080/wx/storage/fetch/
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:38:05,056 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  微信相关  ]]
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP KEY        ->        wxd00e2c332ba2c699
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP-SECRET        ->        d3bbf624a482426639573cb942ac813c
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-ID        ->        1573872631
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-KEY        ->        Cy19790903cyd20121119Cjy19790903
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付通知地址        ->        http://www.example.com/wx/order/pay-notify
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-09 20:38:05,057 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统设置  ]]
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     自动创建朋友圈分享图        ->        false
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     商场名称        ->        litemall
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     首页显示记录数：NEW,HOT,BRAND,TOPIC,CatlogList,CatlogMore        ->        6,6,4,4,4,4
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 49]   
+2020-02-09 20:38:05,058 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 50] ============================================================================================================================================================================================================
+2020-02-09 20:38:08,439 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-02-09 20:38:08,454 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-02-09 20:38:08,457 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-02-09 20:38:08.4450502(Timestamp), false(Boolean)
+2020-02-09 20:38:08,505 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-09 20:38:08,514 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-02-09 20:38:08,517 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-02-09 20:38:08.5098754(Timestamp), false(Boolean)
+2020-02-09 20:38:08,564 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-09 20:38:09,734 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 16.579 seconds (JVM running for 17.78)
+2020-02-09 20:38:09,771 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( order_status = ? and deleted = ? ) 
+2020-02-09 20:38:09,773 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 101(Short), false(Boolean)
+2020-02-09 20:38:09,830 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:38:09,833 INFO [pool-1-thread-1] o.l.litemall.wx.task.OrderUnpaidTask [OrderUnpaidTask.java : 34] 系统开始处理延时任务---订单超时未付款---44
+2020-02-09 20:38:09,844 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) 
+2020-02-09 20:38:09,845 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order where id = ? 
+2020-02-09 20:38:09,847 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-09 20:38:09,851 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 44(Integer)
+2020-02-09 20:38:09,906 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:38:09,907 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:38:09,922 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_order SET id = ?, user_id = ?, order_sn = ?, order_status = ?, consignee = ?, mobile = ?, address = ?, message = ?, goods_price = ?, freight_price = ?, coupon_price = ?, integral_price = ?, groupon_price = ?, order_price = ?, actual_price = ?, comments = ?, end_time = ?, add_time = ?, update_time = ?, deleted = ? where id = ? and update_time = ? 
+2020-02-09 20:38:09,931 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] ==> Parameters: 44(Integer), 1(Integer), 20200206783480(String), 103(Short), hyh(String), 15890373389(String), 河南省郑州市中原区 郑州轻工业大学(String), (String), 27.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 0.00(BigDecimal), 27.00(BigDecimal), 27.00(BigDecimal), 0(Short), 2020-02-09 20:38:09.909137(Timestamp), 2020-02-06 16:34:53.0(Timestamp), 2020-02-09 20:38:09.909137(Timestamp), false(Boolean), 44(Integer), 2020-02-06 16:34:53.0(Timestamp)
+2020-02-09 20:38:10,060 DEBUG [pool-1-thread-1] o.l.l.d.d.O.updateWithOptimisticLocker [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:38:10,076 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-09 20:38:10,079 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 44(Integer), false(Boolean)
+2020-02-09 20:38:10,152 DEBUG [pool-1-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:38:10,153 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_goods_product set number = number + ?, update_time = now() where id = ? 
+2020-02-09 20:38:10,156 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] ==> Parameters: 1(Short), 22(Integer)
+2020-02-09 20:38:10,289 DEBUG [pool-1-thread-1] o.l.l.d.d.G.addStock [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:38:10,289 INFO [pool-1-thread-1] o.l.litemall.wx.task.OrderUnpaidTask [OrderUnpaidTask.java : 65] 系统结束处理延时任务---订单超时未付款---44
+2020-02-09 20:50:56,456 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, username, `password`, last_login_ip, last_login_time, avatar, add_time, update_time, deleted, role_ids from litemall_admin WHERE ( username = ? and deleted = ? ) 
+2020-02-09 20:50:56,457 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), false(Boolean)
+2020-02-09 20:50:56,514 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:56,620 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_admin SET username = ?, `password` = ?, last_login_ip = ?, last_login_time = ?, avatar = ?, add_time = ?, update_time = ?, deleted = ?, role_ids = ? where id = ? 
+2020-02-09 20:50:56,635 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), $2a$10$.rEfyBb/GURD9P2p0fRg/OAJGloGNDkJS4lY0cQHeqDgsbdTylBpu(String), 192.168.74.1(String), 2020-02-09 20:50:56.6190766(Timestamp), https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif(String), 2018-02-01 00:00:00.0(Timestamp), 2020-02-09 20:50:56.6190766(Timestamp), false(Boolean), [1](String), 1(Integer)
+2020-02-09 20:50:56,760 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:50:56,764 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_log ( `admin`, ip, `type`, `action`, `status`, `result`, `comment`, add_time, update_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-02-09 20:50:56,772 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), 192.168.74.1(String), 1(Integer), 登录(String), true(Boolean), (String), (String), 2020-02-09 20:50:56.7616963(Timestamp), 2020-02-09 20:50:56.7616963(Timestamp)
+2020-02-09 20:50:56,894 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-09 20:50:56,895 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-02-09 20:50:56,897 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-09 20:50:56,950 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,028 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-02-09 20:50:57,031 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-02-09 20:50:57,083 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,088 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-02-09 20:50:57,089 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-02-09 20:50:57,140 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,439 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_user WHERE ( deleted = ? ) 
+2020-02-09 20:50:57,442 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:50:57,498 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,507 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( deleted = ? ) 
+2020-02-09 20:50:57,512 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:50:57,568 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,573 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods_product WHERE ( deleted = ? ) 
+2020-02-09 20:50:57,574 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:50:57,633 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-09 20:50:57,635 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_order WHERE ( deleted = ? ) 
+2020-02-09 20:50:57,636 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-09 20:50:57,688 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1

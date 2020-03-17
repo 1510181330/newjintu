@@ -1,0 +1,796 @@
+2020-02-05 18:14:39,923 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on DESKTOP-0QNT9TJ with PID 16500 (D:\Deve\jintu\litemall-all\target\classes started by admin in D:\Deve\jintu)
+2020-02-05 18:14:39,930 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-02-05 18:14:39,931 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-02-05 18:14:50,801 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, key_name, key_value, add_time, update_time, deleted from litemall_system WHERE ( deleted = ? ) 
+2020-02-05 18:14:51,010 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:14:51,130 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 18
+2020-02-05 18:14:51,134 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 42] ============================================================================================================================================================================================================
+2020-02-05 18:14:51,135 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 43] 
+2020-02-05 18:14:51,135 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 44]               Litemall 初始化信息
+2020-02-05 18:14:51,135 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 45] 
+2020-02-05 18:14:51,135 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-05 18:14:51,135 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统信息  ]]
+2020-02-05 18:14:51,136 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-05 18:14:51,136 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     服务器端口        ->        8080
+2020-02-05 18:14:51,136 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库USER        ->        root
+2020-02-05 18:14:51,136 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库地址        ->        jdbc:mysql://112.74.58.0:3306/litemall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+2020-02-05 18:14:51,136 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  模块状态  ]]
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     邮件        ->        false
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     短信        ->        false
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递信息        ->        false
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递鸟ID        ->        XXXXXXXXX
+2020-02-05 18:14:51,137 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     对象存储        ->        local
+2020-02-05 18:14:51,138 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象存储路径        ->        storage
+2020-02-05 18:14:51,138 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象访问地址        ->        http://localhost:8080/wx/storage/fetch/
+2020-02-05 18:14:51,138 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-05 18:14:51,138 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  微信相关  ]]
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP KEY        ->        wxd00e2c332ba2c699
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP-SECRET        ->        d3bbf624a482426639573cb942ac813c
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-ID        ->        1573872631
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-KEY        ->        Cy19790903cyd20121119Cjy19790903
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付通知地址        ->        http://www.example.com/wx/order/pay-notify
+2020-02-05 18:14:51,139 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统设置  ]]
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     自动创建朋友圈分享图        ->        false
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     商场名称        ->        litemall
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     首页显示记录数：NEW,HOT,BRAND,TOPIC,CatlogList,CatlogMore        ->        6,6,4,4,4,4
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 49]   
+2020-02-05 18:14:51,140 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 50] ============================================================================================================================================================================================================
+2020-02-05 18:14:54,476 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-02-05 18:14:54,490 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-02-05 18:14:54,493 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-02-05 18:14:54.4830005(Timestamp), false(Boolean)
+2020-02-05 18:14:54,552 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:14:54,560 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-02-05 18:14:54,561 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-02-05 18:14:54.5577942(Timestamp), false(Boolean)
+2020-02-05 18:14:54,621 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:14:55,249 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 17.025 seconds (JVM running for 18.611)
+2020-02-05 18:14:55,266 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( order_status = ? and deleted = ? ) 
+2020-02-05 18:14:55,268 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 101(Short), false(Boolean)
+2020-02-05 18:14:55,322 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:14:55,330 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) 
+2020-02-05 18:14:55,331 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:14:55,386 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,119 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:15:18,120 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_brand 
+2020-02-05 18:15:18,122 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 18:15:18,122 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-02-05 18:15:18,173 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,174 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,217 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-02-05 18:15:18,221 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-02-05 18:15:18,240 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-02-05 18:15:18,244 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,275 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-02-05 18:15:18,276 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-02-05 18:15:18,282 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:15:18,282 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:15:18,282 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:15:18,285 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,286 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-02-05 18:15:18,286 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,286 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-02-05 18:15:18,290 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:15:18,296 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 13
+2020-02-05 18:15:18,326 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,329 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 18:15:18,329 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,330 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,334 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 6(Integer)
+2020-02-05 18:15:18,336 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 18:15:18,337 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,338 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,339 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,340 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,340 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-02-05 18:15:18,340 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,341 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,341 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-02-05 18:15:18,342 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,342 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,343 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-02-05 18:15:18,343 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-02-05 18:15:18,346 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:15:18,346 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,349 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:15:18,382 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:15:18,384 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:15:18,396 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,398 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:15:18,399 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:15:18,400 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:15:18,400 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 18:15:18,401 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:15:18,403 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-02-05 18:15:18,403 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:15:18,406 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 18:15:18,455 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:15:18,460 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:15:18,468 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,470 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,523 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,524 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:15:18,527 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-02-05 18:15:18,585 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:15:18,589 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:15:18,590 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1002(Integer), false(Boolean)
+2020-02-05 18:15:18,646 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:15:18,653 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,656 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1007(Integer), 1008(Integer), 1009(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,713 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,716 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:15:18,717 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1003(Integer), false(Boolean)
+2020-02-05 18:15:18,772 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:15:18,780 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,782 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1010(Integer), 1011(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,832 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:15:18,835 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:15:18,836 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 18:15:18,887 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:15:18,892 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:15:18,893 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), 1013(Integer), 1014(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:15:18,946 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,588 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_brand 
+2020-02-05 18:23:21,589 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 18:23:21,636 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,639 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-02-05 18:23:21,642 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-02-05 18:23:21,699 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 13
+2020-02-05 18:23:21,699 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-02-05 18:23:21,700 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:23:21,749 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,749 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:21,750 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-02-05 18:23:21,800 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,801 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-02-05 18:23:21,801 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:23:21,847 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,848 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:21,848 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 18:23:21,904 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:23:21,905 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-02-05 18:23:21,905 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-02-05 18:23:21,955 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:21,956 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-02-05 18:23:21,956 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-02-05 18:23:22,007 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:23:22,007 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 18:23:22,008 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-02-05 18:23:22,027 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:23:22,028 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 18:23:22,063 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:23:22,081 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:23:22,083 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,084 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,125 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,126 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:22,127 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-02-05 18:23:22,171 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:23:22,172 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:23:22,172 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1002(Integer), false(Boolean)
+2020-02-05 18:23:22,215 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:23:22,217 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,218 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1007(Integer), 1008(Integer), 1009(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,260 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,262 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:23:22,262 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1003(Integer), false(Boolean)
+2020-02-05 18:23:22,310 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:23:22,312 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,312 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1010(Integer), 1011(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,357 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,358 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:23:22,358 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 18:23:22,407 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:23:22,410 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,410 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), 1013(Integer), 1014(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,458 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,601 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:23:22,601 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-02-05 18:23:22,642 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,643 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,654 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,654 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-02-05 18:23:22,655 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:23:22,692 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,693 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:22,693 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:23:22,699 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,700 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 18:23:22,701 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 6(Integer)
+2020-02-05 18:23:22,741 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:23:22,741 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-02-05 18:23:22,742 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-02-05 18:23:22,749 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:23:22,749 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:23:22,749 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:23:22,798 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,798 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:22,798 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:23:22,799 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-02-05 18:23:22,799 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:23:22,800 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-02-05 18:23:22,851 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:23:22,853 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:23:22,854 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:23:22,854 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-02-05 18:23:22,903 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:25:52,444 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_brand 
+2020-02-05 18:25:52,445 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 18:25:52,459 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:25:52,460 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-02-05 18:25:52,491 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,501 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-02-05 18:25:52,501 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-02-05 18:25:52,517 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,517 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:52,518 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:25:52,546 DEBUG [pool-6-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-02-05 18:25:52,546 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,547 DEBUG [pool-6-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-02-05 18:25:52,547 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-02-05 18:25:52,548 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-02-05 18:25:52,565 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,566 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,566 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:25:52,593 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:25:52,593 DEBUG [pool-6-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:25:52,594 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-02-05 18:25:52,594 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:52,594 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:25:52,594 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:25:52,620 DEBUG [pool-6-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:25:52,620 DEBUG [pool-6-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-02-05 18:25:52,621 DEBUG [pool-6-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-02-05 18:25:52,638 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,639 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,639 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,639 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,639 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:25:52,640 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 18:25:52,670 DEBUG [pool-6-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 13
+2020-02-05 18:25:52,671 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-02-05 18:25:52,671 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:25:52,685 DEBUG [pool-6-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:25:52,685 DEBUG [pool-6-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:25:52,685 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-02-05 18:25:52,685 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-02-05 18:25:52,685 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:25:52,686 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-02-05 18:25:52,720 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,721 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,721 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-02-05 18:25:52,726 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,727 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 18:25:52,727 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 6(Integer)
+2020-02-05 18:25:52,731 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,732 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,732 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-02-05 18:25:52,776 DEBUG [pool-6-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:25:52,776 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:25:52,777 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 18:25:52,778 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,778 DEBUG [pool-6-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:25:52,779 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 18:25:52,779 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-02-05 18:25:52,823 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:25:52,825 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:52,825 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:25:52,834 DEBUG [pool-6-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:25:52,868 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:52,868 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:25:52,869 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-02-05 18:25:52,919 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:25:52,920 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:25:52,920 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1002(Integer), false(Boolean)
+2020-02-05 18:25:52,972 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:25:52,974 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:52,974 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1007(Integer), 1008(Integer), 1009(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:25:53,015 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:53,016 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:25:53,016 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1003(Integer), false(Boolean)
+2020-02-05 18:25:53,058 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:25:53,059 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:53,060 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1010(Integer), 1011(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:25:53,110 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:25:53,111 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:25:53,111 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 18:25:53,156 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:25:53,158 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:25:53,158 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), 1013(Integer), 1014(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:25:53,209 DEBUG [pool-6-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:55,948 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) OR (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:36:55,950 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,006 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:56,006 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) or( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:36:56,007 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean), 10(Integer)
+2020-02-05 18:36:56,136 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-02-05 18:36:56,137 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id = ? AND is_on_sale = ? AND deleted = ?) OR (category_id = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:36:56,138 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean), 1005(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,188 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:56,188 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id = ? and is_on_sale = ? and deleted = ? ) or( category_id = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:36:56,189 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean), 1005(Integer), true(Boolean), false(Boolean), 10(Integer)
+2020-02-05 18:36:56,244 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-02-05 18:36:56,245 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select category_id from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) or( is_hot = ? and is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:36:56,247 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,301 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 12
+2020-02-05 18:36:56,301 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select category_id from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) or( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:36:56,302 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,359 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 61
+2020-02-05 18:36:56,360 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and `level` = ? and deleted = ? ) 
+2020-02-05 18:36:56,362 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), L2(String), false(Boolean)
+2020-02-05 18:36:56,416 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:56,417 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and `level` = ? and deleted = ? ) 
+2020-02-05 18:36:56,418 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), L2(String), false(Boolean)
+2020-02-05 18:36:56,478 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:56,479 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) OR (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:36:56,481 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,530 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:36:56,531 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) or( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:36:56,532 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean), 10(Integer)
+2020-02-05 18:36:56,589 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-02-05 18:36:56,592 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select category_id from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) or( is_new = ? and is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:36:56,593 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:36:56,697 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 11
+2020-02-05 18:36:56,699 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and `level` = ? and deleted = ? ) 
+2020-02-05 18:36:56,700 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), L2(String), false(Boolean)
+2020-02-05 18:36:56,754 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:23,619 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_brand 
+2020-02-05 18:54:23,621 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 18:54:23,667 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:23,668 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:54:23,670 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-02-05 18:54:23,719 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:23,720 DEBUG [pool-7-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-02-05 18:54:23,721 DEBUG [pool-7-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-02-05 18:54:23,772 DEBUG [pool-7-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 13
+2020-02-05 18:54:23,773 DEBUG [pool-7-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-02-05 18:54:23,773 DEBUG [pool-7-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-02-05 18:54:23,821 DEBUG [pool-7-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:54:23,822 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-02-05 18:54:23,822 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:54:23,873 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:23,874 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 18:54:23,875 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 6(Integer)
+2020-02-05 18:54:23,922 DEBUG [pool-7-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:54:23,923 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-02-05 18:54:23,924 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:54:23,967 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:23,968 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:23,969 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 18:54:24,019 DEBUG [pool-7-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:54:24,020 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-02-05 18:54:24,020 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:54:24,066 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,067 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:24,068 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-02-05 18:54:24,115 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,116 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-02-05 18:54:24,117 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-02-05 18:54:24,128 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,128 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,160 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,161 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-02-05 18:54:24,162 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-02-05 18:54:24,183 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,184 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:24,184 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:54:24,209 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:54:24,209 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,210 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,237 DEBUG [pool-7-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:54:24,237 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-02-05 18:54:24,238 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-02-05 18:54:24,254 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,255 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:24,255 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:54:24,297 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,297 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:24,297 DEBUG [pool-7-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:54:24,298 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 18:54:24,298 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-02-05 18:54:24,298 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-02-05 18:54:24,347 DEBUG [pool-7-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:54:24,347 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:54:24,348 DEBUG [pool-7-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:54:24,348 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 18:54:24,393 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:54:24,394 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,395 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,439 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,439 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:54:24,440 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-02-05 18:54:24,483 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:54:24,483 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:54:24,484 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1002(Integer), false(Boolean)
+2020-02-05 18:54:24,537 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:54:24,538 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,539 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1007(Integer), 1008(Integer), 1009(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,590 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,591 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:54:24,591 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1003(Integer), false(Boolean)
+2020-02-05 18:54:24,633 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:54:24,634 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,634 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1010(Integer), 1011(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,683 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:54:24,684 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:54:24,684 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 18:54:24,735 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:54:24,737 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:54:24,738 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), 1013(Integer), 1014(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:54:24,779 DEBUG [pool-7-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,662 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_brand 
+2020-02-05 18:55:10,662 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 18:55:10,679 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-02-05 18:55:10,680 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-02-05 18:55:10,732 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,732 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,735 DEBUG [pool-8-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-02-05 18:55:10,735 DEBUG [pool-8-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-02-05 18:55:10,736 DEBUG [pool-8-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-02-05 18:55:10,736 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-02-05 18:55:10,736 DEBUG [pool-8-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-02-05 18:55:10,736 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-02-05 18:55:10,789 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,789 DEBUG [pool-8-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 13
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-02-05 18:55:10,790 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 18:55:10,846 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-02-05 18:55:10,847 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 6(Integer)
+2020-02-05 18:55:10,847 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-02-05 18:55:10,847 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-02-05 18:55:10,897 DEBUG [pool-8-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:55:10,898 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-02-05 18:55:10,898 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 18:55:10,899 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:55:10,899 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,899 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:10,899 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:55:10,900 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:10,900 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-02-05 18:55:10,944 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,944 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:10,944 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 18:55:10,952 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,953 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:10,953 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:55:10,954 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:10,955 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:10,955 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-02-05 18:55:10,996 DEBUG [pool-8-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:55:10,997 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:55:10,997 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 18:55:11,005 DEBUG [pool-8-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:55:11,005 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 18:55:11,006 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:11,006 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:11,007 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 18:55:11,007 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-02-05 18:55:11,043 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:55:11,045 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:11,045 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:55:11,055 DEBUG [pool-8-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 18:55:11,056 DEBUG [pool-8-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 18:55:11,095 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:11,096 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 18:55:11,096 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1006(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-02-05 18:55:11,140 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 18:55:11,141 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:55:11,142 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1002(Integer), false(Boolean)
+2020-02-05 18:55:11,190 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:55:11,193 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:11,193 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1007(Integer), 1008(Integer), 1009(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:55:11,238 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:11,240 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:55:11,240 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1003(Integer), false(Boolean)
+2020-02-05 18:55:11,291 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 18:55:11,294 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:11,295 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1010(Integer), 1011(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:55:11,340 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 18:55:11,341 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 18:55:11,341 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 18:55:11,389 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 18:55:11,392 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 18:55:11,392 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), 1013(Integer), 1014(Integer), true(Boolean), false(Boolean)
+2020-02-05 18:55:11,438 DEBUG [pool-8-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:01:00,942 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, username, `password`, gender, birthday, last_login_time, last_login_ip, user_level, nickname, mobile, avatar, weixin_openid, session_key, `status`, add_time, update_time, deleted from litemall_user WHERE ( weixin_openid = ? and deleted = ? ) limit 1 
+2020-02-05 19:01:00,944 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: op1eq5WZyz7k4LN0rn9K0BvedHGs(String), false(Boolean)
+2020-02-05 19:01:00,993 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:01:00,998 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_user SET username = ?, `password` = ?, gender = ?, last_login_time = ?, last_login_ip = ?, user_level = ?, nickname = ?, mobile = ?, avatar = ?, weixin_openid = ?, session_key = ?, `status` = ?, add_time = ?, update_time = ?, deleted = ? where id = ? 
+2020-02-05 19:01:01,003 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==> Parameters: op1eq5WZyz7k4LN0rn9K0BvedHGs(String), op1eq5WZyz7k4LN0rn9K0BvedHGs(String), 1(Byte), 2020-02-05 19:01:00.9936796(Timestamp), 0:0:0:0:0:0:0:1(String), 0(Byte), 毅(String), (String), https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTL1Op7dYn4Ez2Oic4FFDNzwDTYANYZcmtDN3MHKtzP2Qo39diaJ5Y2sxajra0tygsjQ9neYE0tVpXiaw/132(String), op1eq5WZyz7k4LN0rn9K0BvedHGs(String), fj2Oud2Qji+ZSVxu1KWOvg==(String), 0(Byte), 2020-01-14 17:41:35.0(Timestamp), 2020-02-05 19:01:00.9966828(Timestamp), false(Boolean), 3(Integer)
+2020-02-05 19:01:01,133 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:01:01,290 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select order_status , comments from litemall_order WHERE ( user_id = ? and deleted = ? ) 
+2020-02-05 19:01:01,291 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), false(Boolean)
+2020-02-05 19:01:01,335 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 5
+2020-02-05 19:02:53,083 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category where id = ? 
+2020-02-05 19:02:53,088 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer)
+2020-02-05 19:02:53,134 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:02:53,139 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 19:02:53,139 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1004(Integer), false(Boolean)
+2020-02-05 19:02:53,187 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-02-05 19:02:54,239 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id = ? AND is_on_sale = ? AND deleted = ?) OR (category_id = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 19:02:54,239 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1012(Integer), true(Boolean), false(Boolean), 1012(Integer), true(Boolean), false(Boolean)
+2020-02-05 19:02:54,290 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:02:54,291 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select category_id from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) or( is_on_sale = ? and deleted = ? ) 
+2020-02-05 19:02:54,292 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean), true(Boolean), false(Boolean)
+2020-02-05 19:02:54,346 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 61
+2020-02-05 19:02:54,350 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and `level` = ? and deleted = ? ) 
+2020-02-05 19:02:54,352 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), L2(String), false(Boolean)
+2020-02-05 19:02:54,403 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:02:58,507 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category where id = ? 
+2020-02-05 19:02:58,508 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer)
+2020-02-05 19:02:58,559 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:02:58,560 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-02-05 19:02:58,560 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1001(Integer), false(Boolean)
+2020-02-05 19:02:58,614 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 19:02:59,126 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id = ? AND is_on_sale = ? AND deleted = ?) OR (category_id = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 19:02:59,126 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean), 1005(Integer), true(Boolean), false(Boolean)
+2020-02-05 19:02:59,181 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:02:59,182 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id = ? and is_on_sale = ? and deleted = ? ) or( category_id = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 19:02:59,182 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean), 1005(Integer), true(Boolean), false(Boolean), 10(Integer)
+2020-02-05 19:02:59,235 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-02-05 19:02:59,236 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select category_id from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) or( is_on_sale = ? and deleted = ? ) 
+2020-02-05 19:02:59,237 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean), true(Boolean), false(Boolean)
+2020-02-05 19:02:59,283 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 61
+2020-02-05 19:02:59,286 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and `level` = ? and deleted = ? ) 
+2020-02-05 19:02:59,287 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), 1005(Integer), L2(String), false(Boolean)
+2020-02-05 19:02:59,339 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:00,945 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:00,946 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:01,009 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,041 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_collect WHERE ( user_id = ? and value_id = ? and deleted = ? ) 
+2020-02-05 19:03:01,044 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 100013(Integer), false(Boolean)
+2020-02-05 19:03:01,101 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, goods_id, goods_sn, goods_name, product_id, price, `number`, specifications, `checked`, pic_url, add_time, update_time, deleted from litemall_cart WHERE ( user_id = ? and deleted = ? ) 
+2020-02-05 19:03:01,104 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), false(Boolean)
+2020-02-05 19:03:01,122 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,126 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_footprint ( user_id, goods_id, add_time, update_time ) values ( ?, ?, ?, ? ) 
+2020-02-05 19:03:01,147 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 100013(Integer), 2020-02-05 19:03:01.1259276(Timestamp), 2020-02-05 19:03:01.1259276(Timestamp)
+2020-02-05 19:03:01,160 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:01,218 DEBUG [pool-2-thread-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, specifications, price, `number`, url, add_time, update_time, deleted from litemall_goods_product WHERE ( goods_id = ? and deleted = ? ) 
+2020-02-05 19:03:01,220 DEBUG [pool-2-thread-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:01,265 DEBUG [pool-2-thread-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 19:03:01,268 DEBUG [pool-2-thread-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, `attribute`, `value`, add_time, update_time, deleted from litemall_goods_attribute WHERE ( goods_id = ? and deleted = ? ) 
+2020-02-05 19:03:01,270 DEBUG [pool-2-thread-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:01,280 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:03:01,281 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-02-05 19:03:01,287 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 19:03:01,321 DEBUG [pool-2-thread-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 19:03:01,338 DEBUG [pool-2-thread-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, specification, `value`, pic_url, add_time, update_time, deleted from litemall_goods_specification WHERE ( goods_id = ? and deleted = ? ) 
+2020-02-05 19:03:01,340 DEBUG [pool-2-thread-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:01,361 DEBUG [pool-2-thread-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,362 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_issue WHERE (deleted = ?) 
+2020-02-05 19:03:01,363 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-02-05 19:03:01,388 DEBUG [pool-2-thread-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-02-05 19:03:01,388 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_comment WHERE (value_id = ? AND `type` = ? AND deleted = ?) 
+2020-02-05 19:03:01,389 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), 0(Byte), false(Boolean)
+2020-02-05 19:03:01,412 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,413 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, question, answer, add_time, update_time, deleted from litemall_issue WHERE ( deleted = ? ) LIMIT ? 
+2020-02-05 19:03:01,415 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-02-05 19:03:01,445 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,446 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, value_id, `type`, content, user_id, has_picture, pic_urls, star, add_time, update_time, deleted from litemall_comment WHERE ( value_id = ? and `type` = ? and deleted = ? ) order by add_time DESC LIMIT ? 
+2020-02-05 19:03:01,447 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), 0(Byte), false(Boolean), 2(Integer)
+2020-02-05 19:03:01,470 DEBUG [pool-2-thread-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-02-05 19:03:01,503 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:01,504 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, username, `password`, gender, birthday, last_login_time, last_login_ip, user_level, nickname, mobile, avatar, weixin_openid, session_key, `status`, add_time, update_time, deleted from litemall_user where id = ? 
+2020-02-05 19:03:01,505 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer)
+2020-02-05 19:03:01,550 DEBUG [pool-2-thread-6] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:02,131 DEBUG [pool-2-thread-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, pic_url, sort_order, floor_price, add_time, update_time, deleted from litemall_brand where id = ? 
+2020-02-05 19:03:02,131 DEBUG [pool-2-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( goods_id = ? and `status` = ? and deleted = ? ) 
+2020-02-05 19:03:02,131 DEBUG [pool-2-thread-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 10004(Integer)
+2020-02-05 19:03:02,132 DEBUG [pool-2-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), 0(Short), false(Boolean)
+2020-02-05 19:03:02,179 DEBUG [pool-2-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:02,179 DEBUG [pool-2-thread-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:02,220 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:02,221 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:02,269 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:02,270 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id = ? AND is_on_sale = ? AND deleted = ?) 
+2020-02-05 19:03:02,270 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean)
+2020-02-05 19:03:02,320 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:02,321 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 19:03:02,322 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005(Integer), true(Boolean), false(Boolean), 6(Integer)
+2020-02-05 19:03:02,366 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 19:03:11,388 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:11,389 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), false(Boolean)
+2020-02-05 19:03:11,431 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:11,432 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, specifications, price, `number`, url, add_time, update_time, deleted from litemall_goods_product where id = ? 
+2020-02-05 19:03:11,432 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 16(Integer)
+2020-02-05 19:03:11,480 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:11,482 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, goods_id, goods_sn, goods_name, product_id, price, `number`, specifications, `checked`, pic_url, add_time, update_time, deleted from litemall_cart WHERE ( goods_id = ? and product_id = ? and user_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:11,483 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 100013(Integer), 16(Integer), 3(Integer), false(Boolean)
+2020-02-05 19:03:11,540 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:11,542 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_cart ( user_id, goods_id, goods_sn, goods_name, product_id, price, `number`, specifications, `checked`, pic_url, add_time, update_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-02-05 19:03:11,544 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 100013(Integer), 100013(String), 牛血清蛋白(String), 16(Integer), 4000.00(BigDecimal), 2(Short), ["500mg"](String), true(Boolean), http://39.108.110.147:888/nxqdb001.png(String), 2020-02-05 19:03:11.5415144(Timestamp), 2020-02-05 19:03:11.5415144(Timestamp)
+2020-02-05 19:03:11,654 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:03:11,655 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-02-05 19:03:11,655 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 19:03:11,703 DEBUG [http-nio-8080-exec-1] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:13,500 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, user_id, province, city, county, address_detail, area_code, postal_code, tel, is_default, add_time, update_time, deleted from litemall_address WHERE ( user_id = ? and is_default = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:13,502 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), true(Boolean), false(Boolean)
+2020-02-05 19:03:13,588 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:13,590 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules where id = ? 
+2020-02-05 19:03:13,591 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 0(Integer)
+2020-02-05 19:03:13,638 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:13,640 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, goods_id, goods_sn, goods_name, product_id, price, `number`, specifications, `checked`, pic_url, add_time, update_time, deleted from litemall_cart where id = ? 
+2020-02-05 19:03:13,641 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 77(Integer)
+2020-02-05 19:03:13,685 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:13,687 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( user_id = ? and `status` = ? and deleted = ? ) order by add_time desc 
+2020-02-05 19:03:13,688 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 0(Short), false(Boolean)
+2020-02-05 19:03:13,733 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:15,277 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, user_id, province, city, county, address_detail, area_code, postal_code, tel, is_default, add_time, update_time, deleted from litemall_address WHERE ( id = ? and user_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:15,278 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 4(Integer), 3(Integer), false(Boolean)
+2020-02-05 19:03:15,324 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,325 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules where id = ? 
+2020-02-05 19:03:15,325 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 0(Integer)
+2020-02-05 19:03:15,371 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:15,372 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, goods_id, goods_sn, goods_name, product_id, price, `number`, specifications, `checked`, pic_url, add_time, update_time, deleted from litemall_cart where id = ? 
+2020-02-05 19:03:15,372 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 77(Integer)
+2020-02-05 19:03:15,418 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,421 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_order WHERE ( user_id = ? and order_sn = ? and deleted = ? ) 
+2020-02-05 19:03:15,422 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 20200205844254(String), false(Boolean)
+2020-02-05 19:03:15,471 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,474 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_order ( user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, add_time, update_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-02-05 19:03:15,475 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), 20200205844254(String), 101(Short), tttjh(String), 17739753622(String), 北京市市辖区东城区 101街道(String), (String), 8000.00(BigDecimal), 0(BigDecimal), 0(BigDecimal), 0(BigDecimal), 0(BigDecimal), 8000.00(BigDecimal), 8000.00(BigDecimal), 2020-02-05 19:03:15.4727899(Timestamp), 2020-02-05 19:03:15.4727899(Timestamp)
+2020-02-05 19:03:15,574 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:03:15,574 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-02-05 19:03:15,574 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 19:03:15,621 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,622 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_order_goods ( order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, add_time, update_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-02-05 19:03:15,624 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: 42(Integer), 100013(Integer), 牛血清蛋白(String), 100013(String), 16(Integer), 2(Short), 4000.00(BigDecimal), ["500mg"](String), http://39.108.110.147:888/nxqdb001.png(String), 2020-02-05 19:03:15.6224127(Timestamp), 2020-02-05 19:03:15.6224127(Timestamp)
+2020-02-05 19:03:15,717 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:03:15,717 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-02-05 19:03:15,718 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-02-05 19:03:15,772 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,775 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.updateByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_cart SET deleted = ? WHERE ( user_id = ? and `checked` = ? ) 
+2020-02-05 19:03:15,776 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.updateByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), 3(Integer), true(Boolean)
+2020-02-05 19:03:15,872 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.updateByExampleSelective [BaseJdbcLogger.java : 159] <==    Updates: 10
+2020-02-05 19:03:15,872 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, specifications, price, `number`, url, add_time, update_time, deleted from litemall_goods_product where id = ? 
+2020-02-05 19:03:15,873 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 16(Integer)
+2020-02-05 19:03:15,918 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:15,919 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.G.reduceStock [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_goods_product set number = number - ?, update_time = now() where id = ? and number >= ? 
+2020-02-05 19:03:15,920 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.G.reduceStock [BaseJdbcLogger.java : 159] ==> Parameters: 2(Short), 16(Integer), 2(Short)
+2020-02-05 19:03:16,033 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.G.reduceStock [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-02-05 19:03:18,842 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_order WHERE (user_id = ? AND deleted = ?) 
+2020-02-05 19:03:18,844 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), false(Boolean)
+2020-02-05 19:03:18,895 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:18,898 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( user_id = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-02-05 19:03:18,900 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 3(Integer), false(Boolean), 10(Integer)
+2020-02-05 19:03:18,949 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-02-05 19:03:18,967 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, groupon_id, rules_id, user_id, share_url, creator_user_id, creator_user_time, `status`, add_time, update_time, deleted from litemall_groupon WHERE ( order_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:18,969 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 42(Integer), false(Boolean)
+2020-02-05 19:03:19,017 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:19,032 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-05 19:03:19,033 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 42(Integer), false(Boolean)
+2020-02-05 19:03:19,075 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:19,077 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, groupon_id, rules_id, user_id, share_url, creator_user_id, creator_user_time, `status`, add_time, update_time, deleted from litemall_groupon WHERE ( order_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:19,078 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 21(Integer), false(Boolean)
+2020-02-05 19:03:19,127 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:19,129 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-05 19:03:19,130 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 21(Integer), false(Boolean)
+2020-02-05 19:03:19,178 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:19,180 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, groupon_id, rules_id, user_id, share_url, creator_user_id, creator_user_time, `status`, add_time, update_time, deleted from litemall_groupon WHERE ( order_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:19,180 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 11(Integer), false(Boolean)
+2020-02-05 19:03:19,224 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:19,225 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-05 19:03:19,225 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 11(Integer), false(Boolean)
+2020-02-05 19:03:19,279 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:19,280 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, groupon_id, rules_id, user_id, share_url, creator_user_id, creator_user_time, `status`, add_time, update_time, deleted from litemall_groupon WHERE ( order_id = ? and deleted = ? ) limit 1 
+2020-02-05 19:03:19,281 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] ==> Parameters: 10(Integer), false(Boolean)
+2020-02-05 19:03:19,327 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectOneByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:03:19,328 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, order_id, goods_id, goods_name, goods_sn, product_id, `number`, price, specifications, pic_url, `comment`, add_time, update_time, deleted from litemall_order_goods WHERE ( order_id = ? and deleted = ? ) 
+2020-02-05 19:03:19,329 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 10(Integer), false(Boolean)
+2020-02-05 19:03:19,379 DEBUG [http-nio-8080-exec-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-02-05 19:03:19,386 ERROR [http-nio-8080-exec-8] o.l.l.c.c.GlobalExceptionHandler [GlobalExceptionHandler.java : 72] orderStatus不支持
+java.lang.IllegalStateException: orderStatus不支持
+	at org.linlinjava.litemall.db.util.OrderUtil.orderStatusText(OrderUtil.java:85)
+	at org.linlinjava.litemall.wx.service.WxOrderService.list(WxOrderService.java:141)
+	at org.linlinjava.litemall.wx.service.WxOrderService$$FastClassBySpringCGLIB$$a1fafb64.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.linlinjava.litemall.wx.service.WxOrderService$$EnhancerBySpringCGLIB$$bc262041.list(<generated>)
+	at org.linlinjava.litemall.wx.service.WxOrderService$$FastClassBySpringCGLIB$$a1fafb64.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at org.linlinjava.litemall.wx.service.WxOrderService$$EnhancerBySpringCGLIB$$84dd34f7.list(<generated>)
+	at org.linlinjava.litemall.wx.web.WxOrderController.list(WxOrderController.java:42)
+	at org.linlinjava.litemall.wx.web.WxOrderController$$FastClassBySpringCGLIB$$226d1dec.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.linlinjava.litemall.wx.web.WxOrderController$$EnhancerBySpringCGLIB$$c032506.list(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-02-05 19:14:56,392 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-02-05 19:14:58,397 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-02-05 19:14:58,399 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-02-05 19:14:56.3926387(Timestamp), false(Boolean)
+2020-02-05 19:14:58,456 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-02-05 19:14:58,458 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-02-05 19:14:58,459 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-02-05 19:14:58.4577502(Timestamp), false(Boolean)
+2020-02-05 19:14:58,514 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0

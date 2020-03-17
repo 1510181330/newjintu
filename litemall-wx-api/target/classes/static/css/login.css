@@ -1,0 +1,124 @@
+.login-box{
+    width: 450px;
+    min-height: 400px;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    /* transform: translate3d(-50%, -50%, 0); */
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 30px #f0f0f0;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 30px auto;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0px 0px 30px #f0f0f0;
+}
+
+.login-logo{
+    width: 70%;
+}   
+
+.form-box{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.form-box button{
+    width: 100%;
+    border-radius: 5px;
+    letter-spacing: 5px;
+}
+
+.username-box,
+.passwd-box,
+.form-input-box{
+    position: relative;
+}
+
+.register-nav{
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.login-nav{
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.username-box input,
+.passwd-box input,
+.form-input-box input{
+    margin:20px 0;
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+.username-box i,
+.passwd-box i,
+.form-input-box i{
+    font-size: 21px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.register-box{
+    width: 800px;
+    min-height: 560px;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    /* transform: translate3d(-50%, -50%, 0); */
+    
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 30px #f0f0f0;
+}
+
+.register-box .form-box{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.register-box .form-box .form-input-box{
+    flex-basis: 33%;
+}
+
+.register-box .form-box .form-input-box input{
+    margin: 10px 0;
+}
+
+.login-nav{
+    margin-top: 0px;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px){
+    .login-box,
+    .register-box{
+        width: 300px;
+    }
+    .register-box{
+        position: relative;
+        box-sizing: border-box;
+        padding: 30px 0;
+        margin-bottom: 50px;
+    }
+    .register-box .form-box{
+        justify-content: space-around;
+    }
+    .register-box .form-box .form-input-box{
+        flex-basis: auto;
+    }
+
+}

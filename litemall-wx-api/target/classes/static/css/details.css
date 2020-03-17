@@ -1,0 +1,387 @@
+
+
+/* 以下下下下下下下是头部banner部分 */
+.banner-box{
+    /* width: 800px;
+    height: 380px; */
+    width: 1300px;
+    min-height: 300px;
+    display: flex;
+    margin: 0px auto;
+    /* border: 1px solid #f0f0f0; */
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+    transition-duration: 0.6s;
+    justify-content: space-between;
+}
+
+/* .banner-box:hover,
+.info:hover{
+    box-shadow: 0px 0px 20px #d4d7dd;
+} */
+
+.banner-left{
+    flex-basis: 20%;
+    /* line-height: 500px; */
+    text-align: center;
+    border:1px solid #f0f0f0;
+
+}
+
+.banner-left img{
+    /* width: 50%;
+    height: 50%; */
+    width: 80%
+    /* border-radius:20px*/;
+}
+
+.banner-right{
+    flex-basis: 78%;
+}
+
+.banner-right-txt1-box{
+    width: 95%;
+    height: 60px;
+    /* margin: 25px 0px; */
+    display: flex;
+    justify-content: space-between;
+   /* border-radius:20px*/; 
+}
+
+.banner-right-txt1-price{
+    /* width: 30%; */
+    flex-basis: 28%;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.banner-right-txt1-name{
+    height: 60px;
+    /* padding-left:5px;
+    padding-right: 5px; */
+    border: 1px solid #f0f0f0;
+    display: inline-block;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+    /* border-radius:20px*/;
+    /* width: 68%; */
+    flex-basis: 100%;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+/* 商品详情页面操作按钮的盒子 */
+.banner-right-btn-box
+{
+    width: 95%;
+    /* height: 269px; */
+    height: 60px;
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #f0f0f0;
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+}
+.banner-right-table-box
+{
+    width: 95%;
+    /* height: 269px; */
+    /* height: 60px; */
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid #f0f0f0; */
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+}
+.banner-right-table-box .layui-table td,
+.banner-right-table-box .layui-table th{
+    text-align: center;
+}
+
+
+
+.banner-right-info-box{
+    width: 95%;
+    /* height: 269px; */
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    margin: 15px 0px;
+    justify-content: space-around;
+    border: 1px solid #f0f0f0;
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+    overflow: hidden;
+}
+
+.banner-right-btn-box *{
+    display: inline-block;
+}
+
+.banner-right-btn-box button{
+    flex-basis: 15%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner-right-btn-box button:nth-of-type(1),
+.banner-right-btn-box2 button:nth-of-type(1){
+    /* border-top-left-radius: 20px; */
+    /* border-bottom-left-radius: 20px; */
+}
+.banner-right-btn-box button:nth-of-type(2),
+.banner-right-btn-box2 button:nth-of-type(2){
+    /* border-top-right-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+}
+
+.banner-right-btn-input-box{
+    flex-basis: 55%;
+    text-align: center;
+}   
+
+.banner-right-btn-input-box input{
+    width: 50%;
+    padding: 0;
+    text-align: center;
+}
+
+.banner-right-btn-box2{
+    width: 95%;
+    /* height: 269px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: flex-end;
+    /* border: 1px solid #f0f0f0; */
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+}
+
+.banner-right-btn-box2 button{
+    flex-basis: 45%;
+    height: 50px;
+    font-size: 22px;
+}
+
+/* 以上上上上上上上上是头部banner部分 */
+
+/* 以下下下下下下下开始为该页面中部的info商品详细信息部分 */
+
+.info{
+    /* width: 800px; */
+    width: 1300px;
+    /* width: 53rem; */
+    min-height: 240px;
+    margin: 50px auto;
+    padding-bottom: 1.5rem;
+    border: 1px solid #f0f0f0;
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+    transition-duration: 0.5s;
+}
+
+.info-top-box{
+    width: 90%;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    /* border-radius: 14px; */
+    margin: 20px auto;
+    /* background-color: #1E9FFF; */
+    background-color: #f0f0f0;
+}
+.info-table th{
+    text-align: center;
+}
+.info-table{
+    width: 90%;
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    border-left: none;
+    border-radius: none;
+}
+
+.detail-good-input input{
+    width: 40px;
+    /* 此处高度覆盖layui-input */
+    height: 30px;
+    text-align: center;
+    /* 此处覆盖laiyui-input的padding-left */
+    padding-left: 0;
+}
+
+/* 以上上上上上开始始为该页面中部的info商品详细信息部分 */
+
+
+/* .recommend{
+    width: 800px;
+    height: 250px;
+    margin: 30px auto;
+    position: relative;
+    border: 1px solid #f0f0f0;
+     border-radius:20px
+     box-shadow: 0px 0px 10px #f0f0f0; 
+} */
+
+.recommend{
+    /* display: inline-block; */
+    /* position: absolute; */
+    width: 100vw;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+/* 隐藏.recommend的滚动条 */
+.recommend::-webkit-scrollbar {
+    display:none
+}
+.recommend-container{
+    /* width: 1020px; */
+
+    /* height: 250px; */
+    /* padding-left: 15px; */
+    position: relative;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+
+.recommend-good{
+    width: 210px;
+    /* height: 100%; */
+    height: 280px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0px 5px;
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    /* border-radius:20px*/;
+    /* box-shadow: 0px 0px 10px #f0f0f0; */
+}
+
+.recommend-good img{
+    width: 100%; 
+    height: 80%;
+}
+
+.recommend-good-info{
+    display: flex;
+    height: 20%;
+}
+
+.recommend-good-price,
+.recommend-good-name{
+    font-size: 16px;
+    /* 行高为50px因为 .recommend-good的height * (100% - img的80%height) = 250 * 20% */
+    line-height: 50px;
+    /* 单行文字省略效果 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recommend-good-price{
+    text-align: right;
+    flex-basis: 30%;
+}
+
+.recommend-good-name{
+    flex-basis: 70%;
+    text-align: center;
+
+}
+
+
+.recommend-refresh-btn{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border:1px solid #f0f0f0;
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 20px #d4d7dd;
+}
+
+/* .banner:hover,
+.info:hover{
+    box-shadow: 0px 0px 30px #f0f0f0;
+} */
+
+.help-box{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 88vh;
+    right: 2vw;
+    cursor: pointer;
+    border:1px solid #f0f0f0;
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 20px #d4d7dd;
+}
+
+.help-box:hover{
+    box-shadow: 0px 0px 40px #d4d7dd;
+}
+
+@media only screen and  (max-width:500px){
+    .banner-box{
+        width: 90vw;
+        flex-flow: column;
+        height: unset;
+    }
+    .banner-right-txt1-box,
+    .banner-right-info-box,
+    .banner-right-btn-box,
+    .banner-right-btn-box2{
+        width: unset;
+    }
+    .banner-right{
+        padding: 0 15px;
+        padding-bottom: 15px;
+    }
+
+    .info{
+        width: 90vw;
+    }
+
+
+}

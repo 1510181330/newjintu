@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6598c0ca-f39b-4920-aff2-455e2f90a1db" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WVHVNynbGBYdLsfVxj4OsMqGlY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Deve\jintu\litemall-core" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="litemall-wx-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.linlinjava.litemall.wx.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="litemall-admin-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.linlinjava.litemall.admin.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="litemall-all" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.linlinjava.litemall.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6598c0ca-f39b-4920-aff2-455e2f90a1db" name="Default Changelist" comment="" />
+      <created>1579227864504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579227864504</updated>
+      <workItem from="1579227869419" duration="6781000" />
+      <workItem from="1579248426075" duration="1785000" />
+      <workItem from="1579255031281" duration="4318000" />
+      <workItem from="1579313590698" duration="710000" />
+      <workItem from="1579412958009" duration="215000" />
+      <workItem from="1579435563551" duration="212000" />
+      <workItem from="1579435866600" duration="641000" />
+      <workItem from="1579436984438" duration="860000" />
+      <workItem from="1579603769523" duration="3595000" />
+      <workItem from="1579677068713" duration="938000" />
+      <workItem from="1579692007660" duration="876000" />
+      <workItem from="1579693684012" duration="546000" />
+      <workItem from="1579695569615" duration="1422000" />
+      <workItem from="1579748277628" duration="2922000" />
+      <workItem from="1580199807139" duration="905000" />
+      <workItem from="1580201322712" duration="269000" />
+      <workItem from="1580201738592" duration="1581000" />
+      <workItem from="1580213108383" duration="774000" />
+      <workItem from="1580214284283" duration="302000" />
+      <workItem from="1580214680937" duration="417000" />
+      <workItem from="1580266944021" duration="601000" />
+      <workItem from="1580537561603" duration="53000" />
+      <workItem from="1580808867510" duration="918000" />
+      <workItem from="1580809978479" duration="454000" />
+      <workItem from="1580811018417" duration="10000" />
+      <workItem from="1580895609750" duration="1636000" />
+      <workItem from="1580948011656" duration="153000" />
+      <workItem from="1581057620269" duration="364000" />
+      <workItem from="1581246230723" duration="4005000" />
+      <workItem from="1581640727780" duration="52000" />
+      <workItem from="1581651515911" duration="45000" />
+      <workItem from="1581659049610" duration="1273000" />
+      <workItem from="1581678734140" duration="45000" />
+      <workItem from="1581739627375" duration="1892000" />
+      <workItem from="1581816803609" duration="598000" />
+      <workItem from="1582244891838" duration="1567000" />
+      <workItem from="1582337937360" duration="75000" />
+      <workItem from="1582338042735" duration="1488000" />
+      <workItem from="1582420823129" duration="41000" />
+      <workItem from="1582684861526" duration="4285000" />
+      <workItem from="1582696365230" duration="3011000" />
+      <workItem from="1582763407207" duration="66000" />
+      <workItem from="1582763565228" duration="1892000" />
+      <workItem from="1582782257622" duration="179000" />
+      <workItem from="1583065587360" duration="698000" />
+      <workItem from="1583369267867" duration="10000" />
+      <workItem from="1583667790951" duration="51000" />
+      <workItem from="1583716751292" duration="602000" />
+      <workItem from="1583811810859" duration="1696000" />
+      <workItem from="1584441727989" duration="579000" />
+      <workItem from="1584442325275" duration="179000" />
+      <workItem from="1584444462768" duration="360000" />
+      <workItem from="1584445215446" duration="211000" />
+      <workItem from="1584445479383" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="微信" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="177" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579693707071">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="385" y="177" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1579693707071" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1579660481638">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579660481638" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1584445513843">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584445513843" />
+    <state width="845" height="207" key="GridCell.Tab.0.bottom" timestamp="1584444823055">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584444823055" />
+    <state width="845" height="207" key="GridCell.Tab.0.center" timestamp="1584444823055">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584444823055" />
+    <state width="845" height="207" key="GridCell.Tab.0.left" timestamp="1584444823055">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584444823055" />
+    <state width="845" height="207" key="GridCell.Tab.0.right" timestamp="1584444823055">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584444823055" />
+    <state width="845" height="207" key="GridCell.Tab.1.bottom" timestamp="1584444823056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584444823056" />
+    <state width="845" height="207" key="GridCell.Tab.1.center" timestamp="1584444823056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1584444823056" />
+    <state width="845" height="207" key="GridCell.Tab.1.left" timestamp="1584444823056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1584444823056" />
+    <state width="845" height="207" key="GridCell.Tab.1.right" timestamp="1584444823056">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="207" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584444823056" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1580201801123">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1580201801123" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1584445500075">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584445500075" />
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579660372383">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1579660372383" />
+    <state x="28" y="43" key="new project wizard" timestamp="1580287773977">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="43" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1580287773977" />
+  </component>
+</project>

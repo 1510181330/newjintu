@@ -1,0 +1,204 @@
+#index-content{
+    /* 对index首页的content进行最低高度限制默认出现滚动条，从而可以出发滚动流加载 */
+    min-height: 110vh;
+}
+
+/* 首页的layui轮播图css */
+#index-carousel{
+    margin-top: 30px;
+    /* layui轮播图宽高在carousel.js中设置 */
+    transform: translateX(-50%);
+    /* layui已经设置相对定位 */
+    left: 50%;
+}
+#index-carousel img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 重写layui flow流加载的下拉加载按钮样式 */
+.layui-flow-more a cite{
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    /* color: #333; */
+    box-shadow: 0px 0px 20px #e5dfdf;
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    font-style: normal;
+}
+
+.content-new-tip{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.goods{
+    width: 76vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-evenly; */
+    justify-content: left;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.goods2{
+    width: 76vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-evenly; */
+    justify-content: left;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.card-box{
+    flex-basis: 25%;
+    margin: 30px 0px;
+}
+
+.card{
+    display: inline-block;
+    /* flex-basis: 23%; */
+    /* width: 250px; */
+    width: 80%;
+    height: 320px;
+    margin: 5px 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* height: 285px; */
+    overflow: hidden;
+    /* 商务风格不适合圆角 */
+    /* border-radius: 12px; */
+    transition-duration: 0.5s;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0px 0px 10px #f0f0f0;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px #f0f0f0;
+}
+
+
+
+.card  img{
+    /* width: 100%;
+    height: 80%; */
+    width: 100%;
+    height: 240px;
+    border-bottom: 1px solid #f0f0f0;
+    /* 设置图片无法被选中 */
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -khtml-user-select: none; 
+    user-select: none;
+}
+.card .good-name,
+.card .good-price{
+    color: #393D49;
+    /* margin-left: 10px; */
+    margin: 10px;
+    display: flex;
+}
+.card .good-name{
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card .good-price{
+    font-size: 18px;
+}
+
+.card .good-name {
+    text-align:center;
+    display: block;
+    font-weight: bold;
+}
+
+.card .good-name span,
+.card .good-price span{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.layui-flow-more{
+    width: 100vw;
+}
+
+/* ipad端goods显示空缺问题修复 */
+@media only screen and (max-width:1270px) and (min-width:900px) {
+
+    .goods{
+        justify-content: left;
+    }
+    .goods2{
+        justify-content: left;
+    }
+    .card-box{
+        flex-basis: 33.3%;
+    }
+    .card{
+        height: 300px;
+    }
+    .card img{
+        height: 220px;
+    }
+
+}
+
+/* 手机端商品卡片显示 */
+@media only screen and (max-width:900px) {
+
+    .card-box{
+        flex-basis: 45%;
+        margin: 5px 0px;
+    }
+    .card{
+        width: unset;
+        height: 240px;
+    }
+
+    .card img{
+        height: 170px;
+    }
+
+    .card:hover{
+        box-shadow: none;
+    }
+
+    #content,
+    #content2{
+        width: 90vw;
+        justify-content: space-around;
+    }
+
+    .card .good-name{
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .card .good-price{
+        font-size: unset;
+        margin-top: 0;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* 隐藏显示详情按钮 */
+    .good-price span button{
+        display: none;
+    }
+
+    .good-name span{
+        display: block;
+    }
+
+   
+}

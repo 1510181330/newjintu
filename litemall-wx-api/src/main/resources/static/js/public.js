@@ -52,22 +52,26 @@ layui.use(['jquery','element'], function(){
 
         let accountToken = Cookies.get("X-Litemall-Token");
         let nickName = Cookies.get("nickName");
+        let integral = Cookies.get("integral");
         if(accountToken){
             // 已经登入
             avatar.style.display = 'inline-block';
             login.style.display = 'none';
 
-            let dd = document.createElement("dd");
+            let dd = document.createElement("dd");            
             let dd2 = document.createElement("dd");
+            let dd3 = document.createElement("dd");
             dd.innerHTML = nickName;
+            dd3.innerHTML = "积分:" + integral;
             dd2.innerHTML = '<a href="javascript:;">退出</a>';
             
             dl.append(dd);
+            dl.append(dd3);
             dl.append(dd2);
-
             // 实现dd2的退出功能
             dd2.addEventListener("click", () => {
                 Cookies.remove("username");
+                Cookies.remove("integral");
                 Cookies.remove("X-Litemall-Token");
                 window.location.href = '/login.html#/login';
             }, false);

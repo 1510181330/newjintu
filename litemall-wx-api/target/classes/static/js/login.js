@@ -328,6 +328,7 @@ layui.use(['jquery', 'layer'], function(){
                         let {token} = res.data;
                         // layer.msg('只想简单的提示');  
                         Cookies.set('X-Litemall-Token', token, { expires: 1 });
+                        Cookies.set('integral', res.data.userInfo.cookie, { expires: 1 });                        
                         Cookies.set('nickName', res.data.userInfo.nickName, { expires: 1 });
                         // Cookies.get("accountToken");
                         window.location.href = '/';

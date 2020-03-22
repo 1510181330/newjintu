@@ -1,8 +1,13 @@
-layui.use(['form', 'jquery', 'layer'], function(){
+layui.use(['form', 'jquery', 'layer','slider'], function(){
     var form = layui.form;
     var $ = layui.jquery;
     var layer = layui.layer;
+    var slider = layui.slider;
     let windowWidth = window.innerWidth;
+
+    var state = {
+        slideNum:""
+    }
 
     let accountToken;
     Cookies.get("X-Litemall-Token")
@@ -741,9 +746,9 @@ layui.use(['form', 'jquery', 'layer'], function(){
                         couponId: -1,
                         message: "",
                         grouponRulesId: 0,
-                        grouponLinkId: 0
+                        grouponLinkId: 0,
+                        iscookie:state.slideNum
                     }
-    
                     $.ajax({
                         url: '/wx/order/submit',
                         type: 'POST',
@@ -761,7 +766,7 @@ layui.use(['form', 'jquery', 'layer'], function(){
                             if(!res.errno){
                                 //提交订单成功
                                 layer.msg("提交订单成功！");
-                                window.location.href = '/list.html';
+                                // window.location.href = '/list.html';
                             }else{
                                 layer.msg("提交订单失败，请稍后再试!");
                             }
@@ -780,5 +785,15 @@ layui.use(['form', 'jquery', 'layer'], function(){
     form.on('submit(formDemo)', function(data){
       layer.msg(JSON.stringify(data.field));
       return false;
+    });
+
+    let integral = Cookies.get("integral") * 1;
+      //渲染
+    slider.render({
+        elem: '#integral-slide',  //绑定元素
+        max:integral,
+        change: function(value){
+            state.slideNum = value;
+        }
     });
   });
